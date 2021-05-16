@@ -1,0 +1,17 @@
+{
+  "name": "zenbot",
+  "version": "1.0.0",
+  "description": "a bot for Infinite",
+  "main": "base.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "ZenBot"
+  ],
+  "author": "iH, puffercat",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}

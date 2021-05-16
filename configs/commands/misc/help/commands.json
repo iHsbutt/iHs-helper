@@ -1,0 +1,10 @@
+{
+    "command1": "test",
+    "command1Value": "test",
+    "command2": "verify",
+    "command2Value": "verify yourself",
+    "command3": "who are you",
+    "command3Value": "tells you something about the bot",
+    "command4": "help",
+    "command4Value": "shows this menu"
+}
