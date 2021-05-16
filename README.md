@@ -3,7 +3,7 @@ extremely customisable bot for discord
 this is NOT siri.
 if you want to use it, CREDIT ME, because i spent a lot of time setting this up.
 
-DEPENDENCIES
+DEPENDENCIES:
 node.js
 
 HOW TO CUSTOMISE THE BOT
