@@ -7,10 +7,10 @@ DEPENDENCIES:
 node.js
 
 HOW TO CUSTOMISE THE BOT
-there are many .json files in folder name/configs. 
+there are many .json files in bot/configs. 
 
 HOW TO SEARCH FOR THAT EXACT CONFIG THAT YOU WANT TO CHANGE
-in folder name/configs there are 2 folders: basic and commands.
+in bot/configs there are 2 folders: basic and commands.
 
 if you want to edit a command-specific function like contents of an embed or role that your bot will search for, you should search in configs/commands
 
