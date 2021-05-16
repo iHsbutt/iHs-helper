@@ -1,6 +1,5 @@
-# iHs-helper
-#iH's helper
-##extremely customisable bot for discord.
+# iH's helper
+## extremely customisable bot for discord.
 if you want to use it, CREDIT ME, because i spent a lot of time setting this up.
 
 DEPENDENCIES:
