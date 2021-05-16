@@ -4,7 +4,7 @@ this is NOT siri.
 if you want to use it, CREDIT ME, because i spent a lot of time setting this up.
 
 DEPENDENCIES:
-node.js
+node.js discord.js (not preinstalled, type npm install discord.js before using the bot)
 
 HOW TO CUSTOMISE THE BOT
 there are many .json files in bot/configs. 
