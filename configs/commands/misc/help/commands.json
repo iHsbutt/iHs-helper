@@ -6,5 +6,9 @@
     "command3": "who are you",
     "command3Value": "tells you something about the bot",
     "command4": "help",
-    "command4Value": "shows this menu"
+    "command4Value": "shows this menu",
+    "command5": "ban",
+    "command5Value": "ban a user",
+    "command6": "kick",
+    "command6Value": "kick a user"
 }
