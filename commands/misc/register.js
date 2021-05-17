@@ -21,7 +21,7 @@ module.exports = {
         //find da role
 
         let role = message.guild.roles.cache.find(r => r.name === registeredRoleName);
-
+                  
         //give da role
         
         message.member.roles.add(role)      

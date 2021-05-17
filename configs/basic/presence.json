@@ -1,4 +1,5 @@
 {
     "activity": "my prefix is -",
-    "type": "PLAYING"
+    "type": "PLAYING",
+    "activityOn": "true"
 }

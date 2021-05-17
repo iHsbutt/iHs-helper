@@ -37,7 +37,7 @@ module.exports = {
                 { name: `${prefix}${command1}`, value: command1Value },
                 { name: `${prefix}${command2}`, value: command2Value },
                 { name: `${prefix}${command3}`, value: command3Value },
-                { name: `${prefix}${command4}`, value: command4Value }
+                { name: `${prefix}${command4}`, value: command4Value },
             )
         message.channel.send(helpEmbed)
     }
