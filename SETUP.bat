@@ -73,7 +73,7 @@ echo {"token": "%token%","prefix": "%prefix%","consoleReady": "%readyMessage%"} 
 echo {"privateChannelName": "%private%","roleName": "Verified","registeredMessage": "Verified successfully","embedColor": "#0099ff","consoleLog": "someone pinged your bot"}
 echo {"activity": "my prefix is -","type": "PLAYING","activityOn": "%playGame%"}
 
-echo your bot is now set up. do you want to start it?
+echo your bot is now set up. do you want to install discord.js (required to start the bot) now?
 echo Y or N (has to be capitalised)
 :startdabot
 set /p start=
@@ -85,7 +85,6 @@ goto :startdabot
 
 :startit
 npm install discord.js
-node .
 
 :end
 break
