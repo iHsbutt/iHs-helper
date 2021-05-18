@@ -73,9 +73,10 @@ echo {"token": "%token%","prefix": "%prefix%","consoleReady": "%readyMessage%"} 
 echo {"privateChannelName": "%private%","roleName": "Verified","registeredMessage": "Verified successfully","embedColor": "#0099ff","consoleLog": "someone pinged your bot"}
 echo {"activity": "my prefix is -","type": "PLAYING","activityOn": "%playGame%"}
 
-echo your bot is now set up. do you want to install discord.js (required to start the bot) now?
+cls
+echo your bot is now set up. do you want to disable or enable any commands?
 echo Y or N (has to be capitalised)
-:startdabot
+:enabledisablecommands
 set /p start=
 
 if "%start%" == "Y" goto :startit
@@ -84,7 +85,8 @@ if "%start%" == "N" goto :end
 goto :startdabot
 
 :startit
-npm install discord.js
+call enabledisablecommands.bat
+
 
 :end
 break

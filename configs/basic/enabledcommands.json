@@ -1,0 +1,18 @@
+{
+    "test": "tempoff",
+    "disabledReason1": "no longer needed",
+    "whoisbot": "true",
+    "disabledReason2": "this feature is currently WIP",
+    "help": "true",
+    "disabledReason3": "this feature is currently WIP",
+    "register": "true",
+    "disabledReason4": "this feature is currently WIP",
+    "ban": "true",
+    "disabledReason5": "this feature is currently WIP",
+    "kick": "true",
+    "disabledReason6": "this feature is currently WIP",
+    "rules": "tempoff",
+    "disabledReason7": "this feature is currently disabled because it doesn't fit all servers",
+    "rank": "tempoff",
+    "disabledReason8": "this feature is currently WIP"
+}
