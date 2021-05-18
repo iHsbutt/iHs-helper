@@ -22,6 +22,10 @@ const command3 = (require('../../configs/commands/misc/help/commands.json').comm
 const command3Value = (require('../../configs/commands/misc/help/commands.json').command3Value)
 const command4 = (require('../../configs/commands/misc/help/commands.json').command4)
 const command4Value = (require('../../configs/commands/misc/help/commands.json').command4Value)
+const command5 = (require('../../configs/commands/misc/help/commands.json').command5)
+const command5Value = (require('../../configs/commands/misc/help/commands.json').command5Value)
+const command6 = (require('../../configs/commands/misc/help/commands.json').command6)
+const command6Value = (require('../../configs/commands/misc/help/commands.json').command6Value)
 
 //your code
 
@@ -38,6 +42,8 @@ module.exports = {
                 { name: `${prefix}${command2}`, value: command2Value },
                 { name: `${prefix}${command3}`, value: command3Value },
                 { name: `${prefix}${command4}`, value: command4Value },
+                { name: `${prefix}${command5}`, value: command5Value },
+                { name: `${prefix}${command6}`, value: command6Value }
             )
         message.channel.send(helpEmbed)
     }

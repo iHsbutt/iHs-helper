@@ -243,4 +243,4 @@ bot.on(`message`, message =>{
 
 })
 
-bot.login(token);
+bot.login(`ODQzNzUwNDQ1MjI5OTMyNTQ1.YKIZ1g.5uwuBJlZum0BNQWTP5VxFR5caeg`);
