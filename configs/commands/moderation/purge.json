@@ -1,0 +1,4 @@
+{
+    "invalidMessages": "**invalid amount**",
+    "tooLowMessages": "**too low amount**"
+}

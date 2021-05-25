@@ -1,1 +1,5 @@
-{"token": "nu","prefix": "-","consoleReady": "the"} 
+{
+    "token": ">> YOUR BOT'S TOKEN HERE <<",
+    "prefix": "-",
+    "consoleReady": "bot is ready"
+} 

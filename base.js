@@ -116,7 +116,7 @@ bot.on(`message`, message =>{
     if(command === `test`){
         const testOn = (require('./configs/basic/enabledcommands.json').test)
         if(testOn === `true`){
-            message.channel.send(`i'm working ok?`)
+            bot.commands.get(`test`).execute(message, args)
         }
         else{
             if(testOn === `tempoff`){
@@ -240,6 +240,55 @@ bot.on(`message`, message =>{
                 }
             }
     }
+
+    if(command === `lock`){
+        const lockOn = (require('./configs/basic/enabledcommands.json').lock)
+            if(lockOn === `true`){
+                bot.commands.get(`lock`).execute(message, args)
+            }
+            else{
+                if(lockOn === `tempoff`){
+                    const disabledReason = (require('./configs/basic/enabledcommands.json').disabledReason9)
+                    message.channel.send(`${disabledFeature}${disabledReason}`)
+                }
+                else{
+                    return
+                }
+            }
+    }
+
+    if(command === `unlock`){
+        const unlockOn = (require('./configs/basic/enabledcommands.json').unlock)
+            if(unlockOn === `true`){
+                bot.commands.get(`unlock`).execute(message, args)
+            }
+            else{
+                if(unlockOn === `tempoff`){
+                    const disabledReason = (require('./configs/basic/enabledcommands.json').disabledReason10)
+                    message.channel.send(`${disabledFeature}${disabledReason}`)
+                }
+                else{
+                    return
+                }
+            }
+    }
+
+    if(command === `purge`){
+        const purgeOn = (require('./configs/basic/enabledcommands.json').purge)
+            if(purgeOn === `true`){
+                bot.commands.get(`purge`).execute(message, args)
+            }
+            else{
+                if(purgeOn === `tempoff`){
+                    const disabledReason = (require('./configs/basic/enabledcommands.json').disabledReason11)
+                    message.channel.send(`${disabledFeature}${disabledReason}`)
+                }
+                else{
+                    return
+                }
+            }
+    }
+
 
 })
 

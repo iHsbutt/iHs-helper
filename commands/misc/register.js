@@ -21,7 +21,7 @@ module.exports = {
         //find da role
 
         let role = message.guild.roles.cache.find(r => r.name === registeredRoleName);
-                  
+
         //give da role
         
         message.member.roles.add(role)      
@@ -36,9 +36,9 @@ module.exports = {
             type: 'text',
             permissionOverwrites: [
 
-               {
-                 id: message.author.id,
-                 allow: ['CREATE_INSTANT_INVITE', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'SEND_TTS_MESSAGES', 'MANAGE_MESSAGES', 'EMBED_LINKS', 'ATTACH_FILES', 'READ_MESSAGE_HISTORY', 'USE_EXTERNAL_EMOJIS'],
+              {
+                id: message.author.id,
+                allow: ['CREATE_INSTANT_INVITE', 'VIEW_CHANNEL', 'SEND_MESSAGES', 'SEND_TTS_MESSAGES', 'MANAGE_MESSAGES', 'EMBED_LINKS', 'ATTACH_FILES', 'READ_MESSAGE_HISTORY', 'USE_EXTERNAL_EMOJIS'],
               },
               {
                 id: message.guild.roles.everyone,

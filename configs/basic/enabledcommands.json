@@ -1,6 +1,6 @@
 {
     "test": "tempoff",
-    "disabledReason1": "no longer needed",
+    "disabledReason1": "will be integrated into help command shortly",
     "whoisbot": "true",
     "disabledReason2": "this feature is currently WIP",
     "help": "true",
@@ -14,5 +14,11 @@
     "rules": "tempoff",
     "disabledReason7": "this feature is currently disabled because it doesn't fit all servers",
     "rank": "tempoff",
-    "disabledReason8": "this feature is currently WIP"
+    "disabledReason8": "this feature is currently WIP",
+    "lock": "true",
+    "disabledReason9": "this feature is currently WIP",
+    "unlock": "true",
+    "disabledReason10": "this feature is currently WIP",
+    "purge": "true",
+    "disabledReason11": "this feature is currently WIP"
 }
