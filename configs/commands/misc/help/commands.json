@@ -10,5 +10,11 @@
     "command5": "ban",
     "command5Value": "ban a user",
     "command6": "kick",
-    "command6Value": "kick a user"
+    "command6Value": "kick a user",
+    "command7": "lock",
+    "command7Value": "locks a channel",
+    "command8": "unlock",
+    "command8Value": "unlocks a channel",
+    "command9": "purge ```amount```",
+    "command9Value": "purges chosen amount of messages"
 }

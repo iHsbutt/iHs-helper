@@ -26,6 +26,12 @@ const command5 = (require('../../configs/commands/misc/help/commands.json').comm
 const command5Value = (require('../../configs/commands/misc/help/commands.json').command5Value)
 const command6 = (require('../../configs/commands/misc/help/commands.json').command6)
 const command6Value = (require('../../configs/commands/misc/help/commands.json').command6Value)
+const command7 = (require('../../configs/commands/misc/help/commands.json').command7)
+const command7Value = (require('../../configs/commands/misc/help/commands.json').command7Value)
+const command8 = (require('../../configs/commands/misc/help/commands.json').command8)
+const command8Value = (require('../../configs/commands/misc/help/commands.json').command8Value)
+const command9 = (require('../../configs/commands/misc/help/commands.json').command9)
+const command9Value = (require('../../configs/commands/misc/help/commands.json').command9Value)
 
 //your code
 
@@ -43,7 +49,10 @@ module.exports = {
                 { name: `${prefix}${command3}`, value: command3Value },
                 { name: `${prefix}${command4}`, value: command4Value },
                 { name: `${prefix}${command5}`, value: command5Value },
-                { name: `${prefix}${command6}`, value: command6Value }
+                { name: `${prefix}${command6}`, value: command6Value },
+                { name: `${prefix}${command7}`, value: command7Value },
+                { name: `${prefix}${command8}`, value: command8Value },
+                { name: `${prefix}${command9}`, value: command9Value }
             )
         message.channel.send(helpEmbed)
     }
