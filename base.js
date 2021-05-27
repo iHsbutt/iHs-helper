@@ -74,34 +74,6 @@ for(const file of miscCommands){
     bot.commands.set(command.name, command)
 }
 
-//wellcome message
-
-bot.on(`guildMemberAdd`, member =>{
-
-        const embedColor = (require('./configs/commands/welcome.json').embedColor)
-        const embedTitle = (require('./configs/commands/welcome.json').embedTitle)
-        const embedDescription = (require('./configs/commands/welcome.json').embedDescription)
-        const mentionUser = (require('./configs/commands/welcome.json').mentionUser)
-        const channel = member.guild.channels.cache.get('842647871089934337');
-
-    if(mentionUser === `true`){
-        const welcome = new Discord.MessageEmbed()
-        .setColor(embedColor)
-        .setTitle(embedTitle)
-        .setDescription(`${member}${embedDescription}`)
-        channel.send(welcome)
-        return
-    }
-    else{
-        const welcome = new Discord.MessageEmbed()
-        .setColor(embedColor)
-        .setTitle(embedTitle)
-        .setDescription(embedDescription)
-        channel.send(welcome)
-        return
-    }
-})
-
 //enable or disable commands
 
 //commands n stuff
@@ -289,6 +261,69 @@ bot.on(`message`, message =>{
             }
     }
 
+    if(command === `vote`){
+        const voteOn = (require('./configs/basic/enabledcommands.json').vote)
+            if(voteOn === `true`){
+                bot.commands.get(`vote`).execute(message, args)
+            }
+            else{
+                if(voteOn === `tempoff`){
+                    const disabledReason = (require('./configs/basic/enabledcommands.json').disabledReason12)
+                    message.channel.send(`${disabledFeature}${disabledReason}`)
+                }
+                else{
+                    return
+                }
+            }
+    }
+
+    if(command === `botsay`){
+        const botsayOn = (require('./configs/basic/enabledcommands.json').botsay)
+            if(botsayOn === `true`){
+                bot.commands.get(`botsay`).execute(message, args)
+            }
+            else{
+                if(botsayOn === `tempoff`){
+                    const disabledReason = (require('./configs/basic/enabledcommands.json').disabledReason13)
+                    message.channel.send(`${disabledFeature}${disabledReason}`)
+                }
+                else{
+                    return
+                }
+            }
+    }
+
+    if(command === `uptime`){
+        const uptimeOn = (require('./configs/basic/enabledcommands.json').uptime)
+            if(uptimeOn === `true`){
+                bot.commands.get(`uptime`).execute(bot, message, args)
+            }
+            else{
+                if(uptimeOn === `tempoff`){
+                    const disabledReason = (require('./configs/basic/enabledcommands.json').disabledReason14)
+                    message.channel.send(`${disabledFeature}${disabledReason}`)
+                }
+                else{
+                    return
+                }
+            }
+    }
+    
+    if(command === `legacyhelp`){
+        const lhelpOn = (require('./configs/basic/enabledcommands.json').lhelp)
+            if(lhelpOn === `true`){
+                bot.commands.get(`lhelp`).execute(message, args)
+            }
+            else{
+                if(lhelpOn === `tempoff`){
+                    const disabledReason = (require('./configs/basic/enabledcommands.json').disabledReason15)
+                    message.channel.send(`${disabledFeature}${disabledReason}`)
+                }
+                else{
+                    return
+                }
+            }
+    }
 
 })
 

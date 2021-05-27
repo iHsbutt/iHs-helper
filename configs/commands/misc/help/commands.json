@@ -15,6 +15,14 @@
     "command7Value": "locks a channel",
     "command8": "unlock",
     "command8Value": "unlocks a channel",
-    "command9": "purge ```amount```",
-    "command9Value": "purges chosen amount of messages"
+    "command9": "purge `amount`",
+    "command9Value": "purges chosen amount of messages",
+    "command10": "vote",
+    "command10Value": "starts a yes or no vote",
+    "command11": "uptime",
+    "command11Value": "shows you how long the bot has been on.",
+    "command12": "legacyhelp",
+    "command12Value": "shows you the old help menu.",
+    "command13": "botsay `what you want the bot to say`",
+    "command13Value": "makes the bot say what you want it to"
 }

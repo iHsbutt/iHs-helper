@@ -12,6 +12,7 @@
   "author": "iH, puffercat",
   "license": "GPL-3.0",
   "dependencies": {
+    "canvacord": "^5.2.0",
     "db": "^3.3.1",
     "discord.js": "^12.5.3",
     "discord.js-reaction-menu": "^1.1.1",

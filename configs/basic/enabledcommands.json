@@ -1,6 +1,6 @@
 {
     "test": "tempoff",
-    "disabledReason1": "will be integrated into help command shortly",
+    "disabledReason1": "crashes the bot lol",
     "whoisbot": "true",
     "disabledReason2": "this feature is currently WIP",
     "help": "true",
@@ -20,5 +20,13 @@
     "unlock": "true",
     "disabledReason10": "this feature is currently WIP",
     "purge": "true",
-    "disabledReason11": "this feature is currently WIP"
+    "disabledReason11": "this feature is currently WIP",
+    "vote": "true",
+    "disabledReason12": "this feature is currently WIP",
+    "botsay": "true",
+    "disabledReason13": "crashes the bot",
+    "uptime": "true",
+    "disabledReason14": "this feature is currently WIP",
+    "lhelp": "true",
+    "disabledReason15": "this feature is currently WIP"
 }

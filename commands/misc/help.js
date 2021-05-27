@@ -3,16 +3,16 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefix = (require('../../configs/basic/basic.json').prefix)
+const rm = require('discord.js-reaction-menu')
 
 //command-specific variables or whatever
 
-//embed and console log
+//embed info and stuff
 
-const embedTitle = (require('../../configs/commands/misc/help/misc.json').embedTitle)
-const embedColor = (require('../../configs/commands/misc/help/misc.json').embedColor)
-const consoleLog = (require('../../configs/commands/misc/help/misc.json').consoleLog)
+const embedColor = (require('../../configs/commands/misc/help/misc').embedColor)
+const embedThumbnail = (require('../../configs/commands/misc/help/misc.json').embedThumbnail)
 
-//commands
+//values
 
 const command1 = (require('../../configs/commands/misc/help/commands.json').command1)
 const command1Value = (require('../../configs/commands/misc/help/commands.json').command1Value)
@@ -33,27 +33,57 @@ const command8Value = (require('../../configs/commands/misc/help/commands.json')
 const command9 = (require('../../configs/commands/misc/help/commands.json').command9)
 const command9Value = (require('../../configs/commands/misc/help/commands.json').command9Value)
 
+//reaction menu stuffs
+
+rm.reactions.back = '◀'
+rm.reactions.next = '▶'
+rm.reactions.first = '⏪'
+rm.reactions.stop = ''
+rm.reactions.last = '⏩'
+
 //your code
 
 module.exports = {
     name: `help`,
-    description: `help for the bot`,
+    description: `help menu.`,
     execute(message, args){
-        console.log(consoleLog)
-            const helpEmbed = new Discord.MessageEmbed()
-            .setColor(embedColor)
-            .setTitle(embedTitle)
-            .addFields(
-                { name: `${prefix}${command1}`, value: command1Value },
-                { name: `${prefix}${command2}`, value: command2Value },
-                { name: `${prefix}${command3}`, value: command3Value },
-                { name: `${prefix}${command4}`, value: command4Value },
-                { name: `${prefix}${command5}`, value: command5Value },
-                { name: `${prefix}${command6}`, value: command6Value },
-                { name: `${prefix}${command7}`, value: command7Value },
-                { name: `${prefix}${command8}`, value: command8Value },
-                { name: `${prefix}${command9}`, value: command9Value }
-            )
-        message.channel.send(helpEmbed)
+    new rm.menu({
+            channel: message.channel,
+            userID: message.author.id,
+            pages: [
+                new Discord.MessageEmbed()
+        		.setColor(embedColor)
+		        .setDescription(`**this is the new help menu for the bot.**
+                **press ⏪ to go to the first page**
+                **press ◀ to go back**
+                **press ▶ to go foward**
+                **press ⏩ to go to the last page**`)
+                .setThumbnail(embedThumbnail),
+                new Discord.MessageEmbed()
+		        .setColor(embedColor)
+		        .setDescription(`
+                > **${prefix}${command1} ► ${command1Value}**
+                > **${prefix}${command2} ► ${command2Value}**
+                > **${prefix}${command3} ► ${command3Value}**
+                > **${prefix}${command4} ► ${command4Value}**
+                > **${prefix}${command5} ► ${command5Value}**`)
+                .setThumbnail(embedThumbnail),
+                new Discord.MessageEmbed()
+		        .setColor(embedColor)
+		        .setDescription(`
+                > **${prefix}${command6} ► ${command6Value}**
+                > **${prefix}${command7} ► ${command7Value}**
+                > **${prefix}${command8} ► ${command8Value}**
+                > **${prefix}${command9} ► ${command9Value}**
+                > **${prefix}${command10} ► ${command10Value}**`)
+                .setThumbnail(embedThumbnail),
+                new Discord.MessageEmbed()
+		        .setColor(embedColor)
+		        .setDescription(`
+                > **${prefix}${command11} ► ${command11Value}**`)
+                .setThumbnail(embedThumbnail),
+            ]
+	
+        })
     }
 }
