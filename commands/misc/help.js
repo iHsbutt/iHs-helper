@@ -32,6 +32,14 @@ const command8 = (require('../../configs/commands/misc/help/commands.json').comm
 const command8Value = (require('../../configs/commands/misc/help/commands.json').command8Value)
 const command9 = (require('../../configs/commands/misc/help/commands.json').command9)
 const command9Value = (require('../../configs/commands/misc/help/commands.json').command9Value)
+const command10 = (require('../../configs/commands/misc/help/commands.json').command6)
+const command10Value = (require('../../configs/commands/misc/help/commands.json').command6Value)
+const command11 = (require('../../configs/commands/misc/help/commands.json').command7)
+const command11Value = (require('../../configs/commands/misc/help/commands.json').command7Value)
+const command12 = (require('../../configs/commands/misc/help/commands.json').command8)
+const command12Value = (require('../../configs/commands/misc/help/commands.json').command8Value)
+const command13 = (require('../../configs/commands/misc/help/commands.json').command9)
+const command13Value = (require('../../configs/commands/misc/help/commands.json').command9Value)
 
 //reaction menu stuffs
 
