@@ -1,0 +1,19 @@
+//bot-wide variables or whatever
+
+const Discord = require('discord.js');
+const bot = new Discord.Client();
+const prefix = (require('../../configs/basic/basic.json').prefix)
+
+//command-specific variables or whatever
+
+
+
+//your code
+
+module.exports = {
+    name: `YOUR COMMANDS NAME HERE`,
+    description: `YOUR DESCRIPTION HERE`,
+    execute(message, args){
+        `YOUR CODE HERE`
+    }
+}
