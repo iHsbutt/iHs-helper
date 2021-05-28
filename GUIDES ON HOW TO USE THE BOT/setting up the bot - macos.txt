@@ -1,1 +1,14 @@
-i don't have a mac
+CONFIGURE PACKAGE MANAGER
+First of all you will have to install homebrew.
+To do that just paste this command into your terminal and follow the instructions: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+BASICS
+
+to make the bot start, you will need to install node.js first.
+You can do that with a command: brew install node
+
+after that, in iHs-helper folder type in command: bash open-me-on-linux-and-mac.sh
+
+then you will have to do some things by hand, sadly at this moment I cannot give you precise instruction or setup script. Soon there will be setup.sh. At this moment getting the bot working needs some technical knowledge.
+
+you will need your bot's token. to get that, read how to get the token.txt
