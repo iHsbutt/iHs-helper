@@ -5,6 +5,10 @@ if you want to use it, CREDIT ME, because i spent a lot of time setting this up.
 DEPENDENCIES:
 node.js (node.js is also a dependency of discord.js)
 discord.js (not preinstalled, type npm install discord.js before using the bot)
+There are batch and shell scripts to install dependencies.
+
+### Important dependency script info for macOS users.
+Instead of running a script like on linux: ./script.sh you have to run it like this: bash script.sh.
 
 HOW TO CUSTOMISE THE BOT
 there are many .json files in bot/configs. 
